@@ -1,0 +1,152 @@
+﻿/*
+    GOLD:
+    #a39161
+    BLACK:
+    rgb 35, 31, 32
+
+    Dark Green:
+    #14322c
+    Plum: 
+    141842
+    BURGANDY:
+    #44121D
+    COFFEE:
+    #131112
+*/
+@font-face{
+    font-family: 'Apercu-Bold';
+    src: url('assets/fonts/Apercu-Bold.otf') format('opentype');
+}
+body
+{
+    font-family: 'Apercu-Bold';
+    color: #a39161;
+    background-color: #14322c;
+    padding: 20px;
+    
+    transition:background-color 1000ms linear;
+}
+.text-primary{
+    color: #a39161;
+}
+#container{
+    margin-top:2em;
+    text-align:center;
+}
+#large-logo-container{
+    position: relative;
+}
+#logo-wrapper{
+    width: 30em;
+    height:30em;    
+    margin: 0 auto;
+}
+#large-logo{
+    width: 30em;
+    height: 30em;   
+}
+#sections{
+
+    margin-top: 1em;
+    font-size: 3em;
+    padding: 1em;
+    letter-spacing: 1px;
+    width:100%;
+    
+}
+#sections:hover{
+}
+.section-header{
+    cursor: pointer;
+}
+.section-text{
+    cursor: auto;
+    padding: 2em;
+    font-size: 0.8em;
+}
+
+#mourningstar-name-container{
+    text-align:center;
+    bottom:1em;
+}
+#mourningstar-name{
+    width:auto;
+    height:4em;
+}
+
+
+
+/* Hang */
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
