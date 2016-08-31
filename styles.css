@@ -17,6 +17,10 @@
     font-family: 'Apercu-Bold';
     src: url('assets/fonts/Apercu-Bold.otf') format('opentype');
 }
+@font-face{
+    font-family: 'Apercu';
+    src: url('assets/fonts/Apercu.otf') format('opentype');
+}
 body
 {
     font-family: 'Apercu-Bold';
@@ -35,6 +39,7 @@ body
 }
 #large-logo-container{
     position: relative;
+    z-index:2;
 }
 #logo-wrapper{
     width: 30em;
@@ -51,20 +56,44 @@ body
     font-size: 3em;
     padding: 1em;
     letter-spacing: 1px;
-    width:100%;
+
     
 }
+
 #sections:hover{
 }
-.section-header{
-    cursor: pointer;
-}
-.section-text{
-    cursor: auto;
-    padding: 2em;
-    font-size: 0.8em;
-}
 
+@media(max-width: 900px) {
+    .section-header {
+        cursor: pointer;
+        font-size: 1em;
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+
+    .section-text {
+        cursor: auto;
+        padding: 2em;
+        font-size: 0.8em;
+        font-family: 'Apercu';
+    }
+}
+@media(min-width: 900px){
+    .section-header {
+        cursor: pointer;
+        font-size: 2vw;
+        position: relative;
+        display: inline;
+    }
+
+    .section-text {
+        cursor: auto;
+        padding: 2em;
+        font-size: 0.8em;
+        font-family: 'Apercu';
+    }
+}
 #mourningstar-name-container{
     text-align:center;
     bottom:1em;
@@ -72,6 +101,7 @@ body
 #mourningstar-name{
     width:auto;
     height:4em;
+    cursor: pointer;
 }
 
 
